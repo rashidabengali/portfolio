@@ -1,3 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+
+/*font-family: 'Londrina Outline', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: orange;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-image: url(../images/computer-backgrounds.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h1 {
+  font-family: 'Germania One', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: pink;
+  margin: 20px 0 10px 0;
+  letter-spacing: .15em;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  padding: 10px;
+  color: #7CE5B5;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  /* DEMO-SPECIFIC STYLES */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+  typing 5s infinite steps(30, end),
+  blink-caret 2s step-end infinite;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent }
+}
+
+header img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 40%;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+#profile:hover {
+  content: url(../images/SEI_Rashida_BW.jpg);
+}
+
+#info {
+  list-style:none;
+}
+#info {
+  overflow:hidden;
+}
+#info li a{
+  text-decoration:none;
+  color:#000;
+  background:#3B9FB0;
+  display:block;
+  height: 200px;
+  width: 200px;
+  margin: 20px 0 20px 60px;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  border-radius: 40%;
+}
+
+#info li a:hover,#info li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+  cursor: url("../images/icons8-laptop-64.png"), auto;
+}
+
+#info li{
+  margin:1em;
+  float:left;
+}
+
+#info li p{
+font-family:"Reenie Beanie",arial,sans-serif;
+/*font-family: "Raleway", sans-serif;*/
+margin: 0 auto;
+  padding-top: 35px;
+  font-size:25px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+#info li img{
+  width: 50%;
+}
+
+footer {
+  background-color: black;
+  }
+
+.end {
+  background-color: black;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.end p {
+  color: pink;
+  font-family: cursive;
+  letter-spacing: 3px;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+}
+
+span {
+  color: #9C2D9C;
+  font-style: oblique;
+}
+
+#social {
+	overflow: auto;
+}
+
+#social li {
+	list-style-type: none;
+	float: right;
+}
+
+#social li a i {
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+
+#social li a i {
+	transition: all 0.2s ease-in-out;
+}
+#social li a i:hover {
+	opacity: .7;
+}
+
+#social .fa-github {
+	background:#000;
+}
+#social .fa-linkedin {
+	background:#007bb6;
+}
+#social .fa-twitter {
+	background:#00aced;
+}
+#social .fa-envelope {
+	background:#dd4b39;
 }
