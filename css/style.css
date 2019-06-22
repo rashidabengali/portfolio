@@ -351,3 +351,9 @@ main .projectrow {
 #about {
   color: #00aced;
 }
+
+.badge {
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+}
