@@ -10,6 +10,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+@import url('https://fonts.googleapis.com/css?family=Quantico&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +19,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  font-family: 'Quantico', sans-serif;
+  color: white;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 .container {
@@ -27,29 +38,35 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 h1 {
-  font-family: 'Germania One', cursive;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: bold;
   text-align: center;
-  color: white;
-  margin: 20px 0 10px 0;
+  color: #dd4b39;
+  margin: 10px;
+  padding: 10px;
   letter-spacing: .15em;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  font-weight: 600;
+  vertical-align: middle;
+}
+
+h2 {
+  color: #dd4b39;
+  letter-spacing: .15em;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
 }
 
 h3 {
   font-family: 'Dancing Script', cursive;
-  padding: 10px;
-  color: black;
+  padding: 10px 10px 40px 10px;
+  color: #00aced;
   text-align: center;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: bold;
   /* DEMO-SPECIFIC STYLES */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -76,12 +93,12 @@ h3 {
   50% { border-color: transparent }
 }
 
-header img {
-  width: 300px;
-  height: 300px;
+#profile {
+  max-width: 100%;
+  height: auto;
   margin: 10px;
-  display: block;
-  border-radius: 30%;
+  text-align: center;
+  align-items: center;
   /* Firefox */
   -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
   /* Safari+Chrome */
@@ -93,14 +110,16 @@ header img {
   -webkit-transition:-webkit-transform .15s linear;
 }
 
-header {
-  background-color: #943633;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
 #profile:hover {
   content: url(../images/SEI_Rashida_BW.jpg);
+}
+
+header p {
+  margin: 10px;
+  text-align: justify;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 #info {
@@ -168,7 +187,7 @@ margin: 0 auto;
 }
 
 .end p {
-  color: pink;
+  color: #00aced;
   font-family: cursive;
   letter-spacing: 3px;
   padding: 10px;
@@ -179,7 +198,7 @@ margin: 0 auto;
 }
 
 span {
-  color: #9C2D9C;
+  color: #dd4b39;
   font-style: oblique;
 }
 
@@ -226,8 +245,12 @@ span {
 
 .projectsimg {
   width: 250px;
+  height: 200px;
+  margin: 0 auto;
   text-align: center;
   align-items: center;
+  border-radius: 5%;
+  vertical-align: top;
 }
 
 .projects {
@@ -235,4 +258,96 @@ span {
   align-items: center;
   font-size: 18px;
   color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.col-sm-6, .col-sm-8, .col-sm-4 {
+  text-align: center;
+  align-items: center;
+}
+
+.col- a:hover {
+  text-decoration: none;
+}
+
+.projdiv {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  background:rgba(0,0,0,.7);
+  text-decoration: none;
+  display: none;
+}
+
+.projdiv:hover .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-top:33%;
+  left:0;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.overlay a:hover {
+  color: white;
+  background-color: #00aced;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a {
+  color: #dd4b39;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav button {
+  margin: 10px;
+  background-color: black;
+}
+
+nav button:hover {
+  transition: 1s all;
+  background-color: #dd4b39;
+}
+
+nav a:hover {
+  text-decoration: none;
+  transition: 1s all;
+  color: white;
+}
+
+h4 {
+  color: #00aced;
+}
+
+main p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+main span {
+  color: orange;
+}
+
+main .projectrow {
+  margin: 5px;
+  padding: 5px;
+}
+
+#about {
+  color: #00aced;
 }

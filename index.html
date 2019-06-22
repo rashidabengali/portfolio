@@ -6,72 +6,176 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rashida Bengali</title>
   <link rel="shortcut icon" type="image/png" href="images/cutmypic.png"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link  href="http://fonts.googleapis.com/css?
   family=Reenie+Beanie:regular"
   rel="stylesheet"
   type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <nav>
+    <div class="row">
+      <div class="col-sm-4">
+        <img id="profile" src="images/SEI_Rashida.jpg" class="rounded-circle" alt="Rashida Bengali">
+      </div>
+      <div class="col-sm-8">
+        <h1>Rashida Bengali</h1>
+        <h3>Full Stack Developer</h3>
+        <button><a href="#">About Me <i class="fa fa-code" style="font-size: 20px; color:#00aced; font-weight:bold"></i></a></button>
+        <button><a href="#">My Projects <i class="fa fa-code" style="font-size: 20px; color:#00aced;font-weight:bold"></i></a></button>
+        <button><a href="#">My Skills <i class="fa fa-code" style="font-size: 20px; color:#00aced;font-weight:bold"></i></a></button>
+        <button><a href="#">Contact Me <i class="fa fa-code" style="font-size: 20px; color:#00aced;font-weight:bold"></i></a></button>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <header>
-      <h1>Rashida Bengali</h1>
-      <h3>Full Stack Developer</h3>
       <div class="row">
-        <div class="col-sm">
-          <img id="profile" src="images/SEI_Rashida.jpg" alt="Rashida Bengali">
+        <div class="col-sm-6">
+          <h2 class="animated infinite pulse delay-2s">Passion</h2>
+          <p>I am passionate about building and designing creative and user-friendly web applications. My problem-solving skills, adaptability, reliability, and self-motivation towards work make me a unique individual.</p>
+          <p>Enjoy working in a team developing innovative software solutions while working on the latest technologies.</p>
+          <p>Eagerness to keep acquiring new skills and gain more knowledge.</p>
         </div>
-        <div class="col-sm">
-          <p class="projects" >I am passionate about building and designing creative and user-friendly web applications. My problem-solving skills, adaptability, reliability, and self-motivation towards work make me a unique individual. I seek to be a part of a talented team and together develop innovative software solutions while working on the latest technologies.</p>
+        <div class="col-sm-6">
+          <h2 class="animated infinite pulse delay-2s">Hobbies</h2>
+          <p>I am a <span style="color:#00aced">travel</span> bug.
+            <br>
+            Love to explore new places and people and their food and culture. It increases my knowledge and broadens my thinking and acceptance toward others.
+            <br>
+            A pro <span style="color:#00aced">Event Planner</span>.
+            <br>
+            Fond of hosting and organizing house parties or formal programs at work with utmost perfection and delight.</p>
+            <p id="about">BEWARE! My positivity and enthusiasm in contagious.</p>
+          </div>
         </div>
+      </header>
+      <main>
+        <div class="row">
+          <div class="col-sm-8">
+            <h2 class="animated infinite pulse delay-2s">Projects</h2>
+            <div class="row projectrow">
+              <div class="col-sm-6 projdiv">
+                <img class="projectsimg" src="images/tictactoe.png" alt="Tic Tac Toe">
+                <div class="overlay">
+                  <a class="projects" href="https://rashidabengali.github.io/tic-tac-toe/" target="_blank">DEMO</a>
+                  <a class="projects" href="https://github.com/rashidabengali/tic-tac-toe" target="_blank">CODE</a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4><i class="fa fa-arrow-left" style="font-size: 22px; color:orange;"></i>  TIC TAC TOE</h4>
+                <p>A simple yet fun game to be played between two players. This game is built using <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span> and <span>jQuery</span>.
+                  <br> Play the traditional Paper Pencil Game in an absolutely attractive new way!</p>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-sm-6">
+                <h4>Restaurants on Rails <i class="fa fa-arrow-right" style="font-size: 18px; color:orange;"></i></h4>
+                <p>It is the new age Restaurant Finder. This application is built using <span>Ruby on Rails</span>, <span>PostgreSQL</span> database connection and has been deployed on <span>Heroku</span>.
+                <br> Click the DEMO link to find out your favourite food place!</p>
+              </div>
+              <div class="col-sm-6 projdiv">
+                <img class="projectsimg" src="images/home.png" alt="Restaurants on Rails">
+                <div class="overlay">
+                  <a class="projects" href="https://project1-rashida.herokuapp.com/" target="_blank">DEMO</a>
+                  <a class="projects" href="https://github.com/rashidabengali/Project1" target="_blank">CODE</a>
+                </div>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-sm-6 projdiv">
+                <img class="projectsimg" src="images/home 2.png" alt="Speed Type">
+                <div class="overlay">
+                  <a class="projects" href="https://rashidabengali.github.io/speed_type/#/" target="_blank">DEMO</a>
+                  <a class="projects" href="https://github.com/rashidabengali/speed_type" target="_blank">CODE</a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4><i class="fa fa-arrow-left" style="font-size: 22px; color:orange;"></i>  SPEED TYPE</h4>
+                <p>A game that will help improve your Typing Speed while making it immensely enjoyable for you to play. This game is built with <span>VueJS </span> as Front-end and <span>Firebase</span> as Back-end.
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-sm-6">
+                <h4>Powerpuff Airlines <i class="fa fa-arrow-right" style="font-size: 18px; color:orange;"></i></h4>
+                <p>A reservation system for an airline for all their available flights. Users can search flights for a specific route and book a seat. This application has been built using <span>ReactJs</span> as Frontend and <span>Rails</span> as Backend with <span>PostgreSQL</span> as database and has been deployed on <span>Heroku</span>.</p>
+              </div>
+              <div class="col-sm-6 projdiv">
+                <img class="projectsimg" src="images/burninghome.png" alt="Burning Airlines">
+                <div class="overlay">
+                  <a class="projects" href="https://mmborres.github.io/burning_airlines_client/#/" target="_blank">DEMO</a>
+                  <a class="projects" href="https://github.com/rashidabengali/burning_airlines_client" target="_blank">CODE</a>
+                </div>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-sm-6 projdiv">
+                <img class="projectsimg" src="images/pamperhome.png" alt="Pamper My Pet">
+                <div class="overlay">
+                  <a class="projects" href="https://rashidabengali.github.io/pamper_my_pet/#/" target="_blank">DEMO</a>
+                  <a class="projects" href="https://github.com/pandyapurvi/pet_shop_react" target="_blank">CODE</a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4><i class="fa fa-arrow-left" style="font-size: 22px; color:orange;"></i> PAMPER MY PET</h4>
+                <p>An online shopping site for pet products. This E-Commerce web application uses mainly <span>ReactJS</span> Front-end and <span>Rails</span> Back-end with <span>PostgreSQL</span> as database and has been deployed on <span>Heroku</span>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h2 class="animated infinite pulse delay-2s">Skills</h2>
+            <span class="badge badge-pill badge-info">HTML5</span>
+            <span class="badge badge-pill badge-info">CSS3</span>
+            <span class="badge badge-pill badge-info">JavaScript</span>
+            <span class="badge badge-pill badge-info">jQuery</span>
+            <span class="badge badge-pill badge-info">UnderscoreJS</span>
+            <span class="badge badge-pill badge-info">Ruby on Rails</span>
+            <span class="badge badge-pill badge-info">ReactJS</span>
+            <span class="badge badge-pill badge-info">VueJS</span>
+            <span class="badge badge-pill badge-info">NodeJS</span>
+            <span class="badge badge-pill badge-info">ExpressJs</span>
+            <span class="badge badge-pill badge-info">ThreeJs</span>
+            <span class="badge badge-pill badge-info">Public Speaking</span>
+            <span class="badge badge-pill badge-info">Content Writing</span>
+            <span class="badge badge-pill badge-info">Email Marketing</span>
+            <span class="badge badge-pill badge-info">Tele Marketing</span>
+            <span class="badge badge-pill badge-info">Corporate Relationship Marketing</span>
+            <span class="badge badge-pill badge-info">Social Media Marketing</span>
+
+            <h2 class="animated infinite pulse delay-2s">My Strengths</h2>
+            <span class="badge badge-pill badge-info">Attention to detail</span>
+            <span class="badge badge-pill badge-info">Communication skills</span>
+            <span class="badge badge-pill badge-info">Organisational skills</span>
+            <span class="badge badge-pill badge-info">Proactive Behaviour</span>
+            <span class="badge badge-pill badge-info">Team Player</span>
+            <span class="badge badge-pill badge-info">Multi-tasker</span>
+          </div>
+        </div>
+
+        <!-- <div class="row">
+        <div class="col">
+
       </div>
-    </header>
-    <main>
-        <div class="row">
-          <div class="col-sm">
-            <img class="projectsimg" src="images/tictactoe.png" alt="Tic Tac Toe">
-            <a href="https://rashidabengali.github.io/tic-tac-toe/" target="_blank"><p class="projects">TIC TAC TOE</p></a>
-            <a href="https://github.com/rashidabengali/tic-tac-toe" target="_blank"><p class="projects">CODE</p> </a>
-          </div>
-          <div class="col-sm">
-            <img class="projectsimg" src="images/home.png" alt="Restaurants on Rails">
-            <a href="https://project1-rashida.herokuapp.com/" target="_blank"><p class="projects" >Restaurants on Rails</p></a>
-            <a href="https://github.com/rashidabengali/Project1" target="_blank"><p class="projects">CODE</p> </a>
-          </div>
-          <div class="col-sm">
-            <img class="projectsimg" src="images/home 2.png" alt="Speed Type">
-            <a href="https://rashidabengali.github.io/speed_type/#/" target="_blank"><p class="projects" >Speed Type</p></a>
-            <a href="https://github.com/rashidabengali/speed_type" target="_blank"><p class="projects">CODE</p> </a>
-          </div>
-        </div>
+      <div class="col">
 
-        <div class="row">
-          <div class="col-sm">
-            <img class="projectsimg" src="images/burninghome.png" alt="Burning Airlines">
-            <a href="https://mmborres.github.io/burning_airlines_client/#/" target="_blank"><p class="projects">Burning Airlines</p></a>
-            <a href="https://github.com/rashidabengali/burning_airlines_client" target="_blank"><p class="projects">CODE</p> </a>
-          </div>
-          <div class="col-sm">
-            <img class="projectsimg" src="images/pamperhome.png" alt="Pamper My Pet">
-            <a href="https://rashidabengali.github.io/pamper_my_pet/#/" target="_blank"><p class="projects" >Pamper My Pet</p></a>
-            <a href="https://github.com/pandyapurvi/pet_shop_react" target="_blank"><p class="projects">CODE</p> </a>
-          </div>
-        </div>
+    </div>
+  </div> -->
 
 
-      <!--<ul id="info">
-      <li>
-      <a href="https://medium.com/a-computer-of-ones-own/sophie-wilson-architect-of-the-modern-world-5d538af7eac7">
-      <img src="images/tictactoe.png" alt="project0">
-      <p>RANKED<br><br>One of The 15 Most Important Women in Tech History</p>
-    </a>
-  </li>
+  <!--<ul id="info">
   <li>
-  <a href="https://www.epo.org/learning-events/european-inventor/finalists/2013/wilson.html">
-  <p>Lovie Lifetime<br><br>Achievement Award<br><br>&#127942;</p>
+  <a href="https://medium.com/a-computer-of-ones-own/sophie-wilson-architect-of-the-modern-world-5d538af7eac7">
+  <img src="images/tictactoe.png" alt="project0">
+  <p>RANKED<br><br>One of The 15 Most Important Women in Tech History</p>
+</a>
+</li>
+<li>
+<a href="https://www.epo.org/learning-events/european-inventor/finalists/2013/wilson.html">
+<p>Lovie Lifetime<br><br>Achievement Award<br><br>&#127942;</p>
 </a>
 </li>
 <li>
@@ -105,6 +209,7 @@
     <li><a href="https://www.linkedin.com/in/rashida-bengali/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
     <li><a href="https://twitter.com/BengaliRashida" target="_blank"><i class="fa fa-twitter"></i></a></li>
   </ul>
+
 </div>
 </div>
 <script src="js/main.js"></script>
