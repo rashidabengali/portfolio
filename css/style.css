@@ -79,7 +79,7 @@ nav a {
 nav a:hover {
   color: Chocolate;
   text-decoration: none;
-  transform: rotate(-20deg);
+  transform: rotate(-15deg);
 }
 
 header {
@@ -421,5 +421,5 @@ footer p {
 
 .scroll-color {
   color: Chocolate;
-  transform: rotate(-20deg);
+  transform: rotate(-15deg);
 }
