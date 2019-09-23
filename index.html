@@ -18,10 +18,10 @@
 <body>
 
   <nav class="zone">
-    <a href="#about">About Me <i class="fa fa-id-card" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate; font-weight:bold"></i></a>
-    <a href="#work">My Work <i class="fa fa-laptop-code" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
-    <a href="#skills">My Skills <i class="fa fa-file-code" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
-    <a href="#contact">Contact Me <i class="fa fa-sms" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
+    <a id="scroll-about" href="#about">About Me <i class="fa fa-id-card nav-icon"></i></a>
+    <a id="scroll-work" href="#work">My Work <i class="fa fa-laptop-code nav-icon"></i></a>
+    <a id="scroll-skills" href="#skills">My Skills <i class="fa fa-file-code nav-icon"></i></a>
+    <a id="scroll-contact" href="#contact">Contact Me <i class="fa fa-sms nav-icon"></i></a>
   </nav>
 
   <header class="parallax-window zone" data-parallax="scroll" data-image-src="images/laptop-journal.jpg">
@@ -33,15 +33,15 @@
 
   <div id="about" class="container parallax-window zone" data-parallax="scroll" data-image-src="images/SEI_Rashida.jpg">
     <main>
-      <h2 class="animated fadeInDown delay-2s zone">Passion</h2>
+      <h2 class="zone">Passion</h2>
       <p>I am passionate about building and designing creative and user-friendly web applications. My problem-solving skills, adaptability, reliability, and self-motivation towards work make me a unique individual.</p>
       <p>Enjoy working in a team developing innovative software solutions while working on the latest technologies.</p>
       <p>Have an eagerness to keep acquiring new skills and gain more knowledge.</p>
-      <p>Regular attendee in MeetUps and stay connected with the Tech Community</p>
+      <p>Regular attendee in MeetUps staying connected with the Tech Community</p>
     </main>
 
     <aside>
-      <h2 class=" animated fadeInDown delay-2szone">Hobbies</h2>
+      <h2 class="zone">Hobbies</h2>
       <p>I have the <span style="color:Chocolate">travel</span> bug
         <br>
         Love to explore new places and people and their food and culture. It increases my knowledge and broadens my worldview and acceptance toward others
@@ -112,8 +112,8 @@
 
   </div>
 
-  <div id="skills" class="zone">
-    <h2 class=" animated fadeInDown delay-2s zone"> Skills</h2>
+  <div id="skills" class=" skilled zone">
+    <h2 id="scroll" class="zone"> Skills</h2>
     <i class="devicon-html5-plain-wordmark colored"></i>
     <i class="devicon-css3-plain-wordmark colored"></i>
     <i class="devicon-sass-original colored"></i>
@@ -125,15 +125,19 @@
     <i class="devicon-vuejs-plain-wordmark colored"></i>
     <i class="devicon-ruby-plain-wordmark colored"></i>
     <i class="devicon-rails-plain-wordmark colored"></i>
+    <img class="colored" src="images/icons8-database-export-100.png" alt="sql">
     <i class="devicon-postgresql-plain-wordmark colored"></i>
     <i class="devicon-heroku-plain-wordmark colored"></i>
     <i class="devicon-babel-plain colored"></i>
     <i class="devicon-nodejs-plain-wordmark colored"></i>
     <i class="devicon-mongodb-plain-wordmark colored"></i>
+    <img src="images/icons8-graphql-100.png" alt="graphql">
     <i class="devicon-meteor-plain-wordmark colored"></i>
+    <img class="colored" src="images/icons8-npm-100.png" alt="npm">
+    <img class="colored" src="images/icons8-ruby-gem-100.png" alt="gem">
   </div>
 
-  <footer class="animated fadeInDown zone" id="contact">
+  <footer class="zone" id="contact">
     <ul id="social">
       <li class="end" ><a href="mailto:bengali.rashida@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
       <li class="end" ><a href="https://github.com/rashidabengali" target="_blank"><i class="fab fa-github"></i></a></li>
