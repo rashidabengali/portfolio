@@ -15,7 +15,7 @@ $(document).ready( () => {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
       $('#scroll-contact').addClass('scroll-color');
     }
-    else if (wS > (hT+hH-wH)){
+    else if (wS > (hT+hH-wH)) {
       $('#scroll-skills').addClass('scroll-color');;
     }
     else if (wS > (hT2+hH2-wH)){
