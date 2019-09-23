@@ -250,6 +250,7 @@ main > p, aside > p {
 
 span {
   color: Chocolate;
+  font-weight: bold;
 }
 
 /* .skilled {
