@@ -11,16 +11,17 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
   <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <nav class="zone">
-    <a href="#">About Me <i class="fa fa-id-card" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate; font-weight:bold"></i></a>
-    <a href="#">My Work <i class="fa fa-laptop-code" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
-    <a href="#">My Skills <i class="fa fa-file-code" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
-    <a href="#">Contact Me <i class="fa fa-sms" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
+    <a href="#about">About Me <i class="fa fa-id-card" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate; font-weight:bold"></i></a>
+    <a href="#work">My Work <i class="fa fa-laptop-code" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
+    <a href="#skills">My Skills <i class="fa fa-file-code" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
+    <a href="#contact">Contact Me <i class="fa fa-sms" style="font-size: 1.3em; padding-left: 0.2em; color:Chocolate;font-weight:bold"></i></a>
   </nav>
 
   <header class="parallax-window zone" data-parallax="scroll" data-image-src="images/laptop-journal.jpg">
@@ -30,109 +31,123 @@
     </div>
   </header>
 
-  <div class="container parallax-window zone" data-parallax="scroll" data-image-src="images/SEI_Rashida.jpg">
+  <div id="about" class="container parallax-window zone" data-parallax="scroll" data-image-src="images/SEI_Rashida.jpg">
     <main>
-      <h2 id="aboutme" class="animated infinite pulse delay-2s">Passion</h2>
+      <h2 class="animated infinite pulse delay-2s zone">Passion</h2>
       <p>I am passionate about building and designing creative and user-friendly web applications. My problem-solving skills, adaptability, reliability, and self-motivation towards work make me a unique individual.</p>
       <p>Enjoy working in a team developing innovative software solutions while working on the latest technologies.</p>
       <p>Have an eagerness to keep acquiring new skills and gain more knowledge.</p>
+      <p>Regular attendee in MeetUps and stay connected with the Tech Community</p>
     </main>
 
     <aside>
-      <h2 class="animated infinite pulse delay-2s">Hobbies</h2>
-      <p>I have the <span style="color:#00aced">travel</span> bug
+      <h2 class="animated infinite pulse delay-2s zone">Hobbies</h2>
+      <p>I have the <span style="color:Chocolate">travel</span> bug
         <br>
-        Love to explore new places and people and their food and culture. It increases my knowledge and broadens my worldview and acceptance toward others.
+        Love to explore new places and people and their food and culture. It increases my knowledge and broadens my worldview and acceptance toward others
+      </p>
+      <p>A pro <span style="color:Chocolate">Event Planner</span>
         <br>
-        A pro <span style="color:#00aced">Event Planner</span>.
-        <br>
-        Fond of hosting and organizing social gatherings and work events with utmost perfection and delight
-        <br>
-        BEWARE! My positivity and enthusiasm is contagious
-        </p>
-        <p id="about"></p>
+        Fond of hosting and organizing social gatherings and work events with utmost perfection and delight</p>
+      <p><span style="color:Chocolate">BEWARE!</span>My positivity and enthusiasm is contagious</p>
     </aside>
 
   </div>
 
-      <div class="zone blue grid-wrapper">
+  <div class="zone blue grid-wrapper">
 
-      <div class="card zone">
-        <img class="projectsimg" src="images/tictactoe.png" alt="Tic Tac Toe">
-        <div class="overlay">
-          <a class="projects" href="https://rashidabengali.github.io/tic-tac-toe/" target="_blank">DEMO</a>
-          <a class="projects" href="https://github.com/rashidabengali/tic-tac-toe" target="_blank">CODE</a>
-        </div>
-        <div class="text">
-          <h4>TIC TAC TOE</h4>
-          <p>A simple yet fun game to be played between two players. This game is built using <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span> and <span>jQuery</span>
+    <div class="card zone" id="work">
+      <img class="projectsimg" src="images/tictactoe.png" alt="Tic Tac Toe">
+      <div class="overlay">
+        <a class="zone" href="https://rashidabengali.github.io/tic-tac-toe/" target="_blank">DEMO</a>
+        <a class="zone" href="https://github.com/rashidabengali/tic-tac-toe" target="_blank">CODE</a>
+      </div>
+      <div class="text">
+        <h4>TIC TAC TOE</h4>
+        <p>A simple yet fun game to be played between two players. This game is built using <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span> and <span>jQuery</span>
+          <br>
           <br>
           Play the traditional Paper Pencil Game in an absolutely attractive new way!</p>
-        </div>
       </div>
+    </div>
 
-      <div class="card zone">
-        <img class="projectsimg" src="images/home.png" alt="Restaurants on Rails">
-        <div class="overlay">
-          <a class="projects" href="https://project1-rashida.herokuapp.com/" target="_blank">DEMO</a>
-          <a class="projects" href="https://github.com/rashidabengali/Project1" target="_blank">CODE</a>
-        </div>
-        <div class="text">
-          <h4>Restaurants on Rails</h4>
-          <p>It is the new age Restaurant Finder. This application is built using <span>Ruby on Rails</span>, <span>PostgreSQL</span> database connection and has been deployed on <span>Heroku</span>
+    <div class="card zone">
+      <img class="projectsimg" src="images/home.png" alt="Restaurants on Rails">
+      <div class="overlay">
+        <a class="zone" href="https://project1-rashida.herokuapp.com/" target="_blank">DEMO</a>
+        <a class="zone" href="https://github.com/rashidabengali/Project1" target="_blank">CODE</a>
+      </div>
+      <div class="text">
+        <h4>Restaurants on Rails</h4>
+        <p>It is the new age Restaurant Finder. This application is built using <span>Ruby on Rails</span>, <span>PostgreSQL</span> database connection and has been deployed on <span>Heroku</span>
+          <br>
           <br>
           Click the DEMO link to find out your favourite food place!</p>
-        </div>
       </div>
+    </div>
 
-      <div class="card zone">
-        <img class="projectsimg" src="images/pamperhome.png" alt="Pamper My Pet">
-        <div class="overlay">
-          <a class="projects" href="https://rashidabengali.github.io/pamper_my_pet/#/" target="_blank">DEMO</a>
-          <a class="projects" href="https://github.com/pandyapurvi/pet_shop_react" target="_blank">CODE</a>
-        </div>
-        <div class="text">
-          <h4>PAMPER MY PET</h4>
-          <p>An online shopping site for pet products. This E-Commerce web application uses mainly <span>ReactJS</span> Front-end and <span>Rails</span> Back-end with <span>PostgreSQL</span> as database and has been deployed on <span>Heroku</span></p>
-        </div>
+    <div class="card zone">
+      <img class="projectsimg" src="images/pamperhome.png" alt="Pamper My Pet">
+      <div class="overlay">
+        <a class="zone" href="https://rashidabengali.github.io/pamper_my_pet/#/" target="_blank">DEMO</a>
+        <a class="zone" href="https://github.com/pandyapurvi/pet_shop_react" target="_blank">CODE</a>
       </div>
-
-      <div class="card zone">
-        <img class="projectsimg" src="images/home 2.png" alt="Speed Type">
-        <div class="overlay">
-          <a class="projects" href="https://rashidabengali.github.io/speed_type/#/" target="_blank">DEMO</a>
-          <a class="projects" href="https://github.com/rashidabengali/speed_type" target="_blank">CODE</a>
-        </div>
-        <div class="text">
-          <h4>SPEED TYPE</h4>
-          <p>A game that will help improve your Typing Speed while making it immensely enjoyable for you to play. This game is built with <span>VueJS </span> as Front-end and <span>Firebase</span> as Back-end</p>
-        </div>
+      <div class="text">
+        <h4>PAMPER MY PET</h4>
+        <p>An online shopping site for pet products. This E-Commerce web application uses mainly <span>ReactJS</span> Front-end and <span>Rails</span> Back-end with <span>PostgreSQL</span> as database and has been deployed on <span>Heroku</span></p>
       </div>
+    </div>
 
-    <div class="">
-
-      <h2 id="skillset" class="animated infinite pulse delay-2s">My Skills</h2>
-
+    <div class="card zone">
+      <img class="projectsimg" src="images/home 2.png" alt="Speed Type">
+      <div class="overlay">
+        <a class="zone" href="https://rashidabengali.github.io/speed_type/#/" target="_blank">DEMO</a>
+        <a class="zone" href="https://github.com/rashidabengali/speed_type" target="_blank">CODE</a>
+      </div>
+      <div class="text">
+        <h4>SPEED TYPE</h4>
+        <p>A game that will help improve your Typing Speed while making it immensely enjoyable for you to play. This game is built with <span>VueJS </span> as Front-end and <span>Firebase</span> as Back-end</p>
+      </div>
     </div>
 
   </div>
 
-  <footer class="zone">
-    <p>Designed with &hearts; by <span>Rashida Bengali</span></p>
+  <div id="skills" class="zone">
+    <h2 class="animated infinite pulse delay-2s"> Skills</h2>
+    <i class="devicon-html5-plain-wordmark colored"></i>
+    <i class="devicon-css3-plain-wordmark colored"></i>
+    <i class="devicon-sass-original colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-jquery-plain-wordmark colored"></i>
+    <i class="devicon-atom-original-wordmark colored"></i>
+    <i class="devicon-git-plain-wordmark colored"></i>
+    <i class="devicon-react-original-wordmark colored"></i>
+    <i class="devicon-vuejs-plain-wordmark colored"></i>
+    <i class="devicon-ruby-plain-wordmark colored"></i>
+    <i class="devicon-rails-plain-wordmark colored"></i>
+    <i class="devicon-postgresql-plain-wordmark colored"></i>
+    <i class="devicon-heroku-plain-wordmark colored"></i>
+    <i class="devicon-babel-plain colored"></i>
+    <i class="devicon-nodejs-plain-wordmark colored"></i>
+    <i class="devicon-mongodb-plain-wordmark colored"></i>
+    <i class="devicon-meteor-plain-wordmark colored"></i>
+  </div>
+
+  <footer class="zone" id="contact">
     <ul id="social">
-      <li><a href="mailto:bengali.rashida@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-      <li><a href="https://github.com/rashidabengali" target="_blank"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/rashida-bengali/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://twitter.com/BengaliRashida" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li class="end" ><a href="mailto:bengali.rashida@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+      <li class="end" ><a href="https://github.com/rashidabengali" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li class="end" ><a href="https://www.linkedin.com/in/rashida-bengali/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li class="end" ><a href="https://twitter.com/BengaliRashida" target="_blank"><i class="fab fa-twitter"></i></a></li>
     </ul>
   </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="js/jquery.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

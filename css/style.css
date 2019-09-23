@@ -32,6 +32,7 @@ body {
 .zone {
   border-radius:4px;
   transition: all 0.5s linear;
+  text-align: center;
 }
 
 .zone:hover {
@@ -41,52 +42,7 @@ body {
   box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  nav {
-    display: block;
-  }
-  /* aside {
-    display: flex;
-  } */
-  .container {
-    display: flex;
-  }
-  main {
-    flex-basis: 0;
-    flex-grow: 2;
-  }
-
-  aside {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-  }
-}
-/*
-@media (min-width: 640px) {
-  .container {
-    display: flex;
-  }
-
-  main {
-    flex-basis: 0;
-    flex-grow: 2;
-  }
-
-  aside {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-  }
-} */
-
-/* @media (min-width: 1024px) {
-  aside {
-    display: flex;
-  }
-} */
-
-nav {
+nav, footer {
   background:black;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -95,6 +51,9 @@ nav {
   radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -184,23 +143,218 @@ header {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
 }
 
 main, aside {
   padding: 0.5em;
 }
 
-main > h2 {
+main > h2, aside > h2 {
+  color: Chocolate;
+  font-size: 2rem;
+  background: rgba(0,0,0,0.7);
+  border-radius: 0.15em;
+  padding: 0.1em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+main > p, aside > p {
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  padding: 0.1em;
+  text-align: justify;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 13px;
+    background: #2d3436;
+}
+
+.card {
+    background-color: #444;
+    margin: 20px;
+}
+
+.card > img {
+    max-width: 100%;
+    min-height: 300px;
+    /* height: auto; */
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    color: Chocolate;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0.5em;
+}
+
+.card > .text {
+    padding: 0 20px 20px;
+}
+
+.overlay {
+  background:rgba(0,0,0,.7);
+  text-decoration: none;
+  display: none;
+}
+
+.card:hover .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-top:33%;
+  left:0;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.overlay a {
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding: 0.2em;
+  margin: 0.2em;
+  border: 1px solid Chocolate;
+  text-decoration: none;
+}
+
+.overlay a:hover {
+  background: Chocolate;
+  border: 1px solid aliceblue;
+  text-decoration: none;
+}
+
+span {
   color: Chocolate;
 }
 
-aside > h2 {
+h2{
   color: Chocolate;
+  font-family: 'Germania one';
+  font-size: 2rem;
+  padding: 0.1em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
-footer {
-  color: #fff;
-  background-color: #aab2f7;
-  padding: 0.5em;
+.colored {
+  font-size: 80px;
+  padding: 0.2em;
+  margin: 0.2em;
 }
+
+/* footer {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+} */
+
+li {
+    padding: 20px;
+}
+
+footer p {
+  font-family: cursive;
+}
+
+#social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 0.7em;
+}
+
+.end {
+  margin: auto;
+}
+
+#social li a i {
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+
+#social li a i {
+	transition: all 0.2s ease-in-out;
+}
+#social li a i:hover {
+	opacity: .7;
+}
+
+#social .fa-github {
+	background:#000;
+}
+#social .fa-linkedin {
+	background:#007bb6;
+}
+#social .fa-twitter {
+	background:#00aced;
+}
+#social .fa-envelope {
+	background:#dd4b39;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    font-size: 0.8em;
+    padding: 0.2em;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  #social {
+    font-size: 0.5em;
+    padding: 0;
+  }
+}
+
+@media (min-width: 560px) {
+  aside {
+    display: flex;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: flex;
+  }
+
+  main, footer {
+    flex-basis: 0;
+    flex-grow: 2;
+  }
+
+  aside {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+/* @media (min-width: 1024px) {
+  aside {
+    display: flex;
+  }
+} */
