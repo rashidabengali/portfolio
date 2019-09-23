@@ -173,7 +173,7 @@ main > p, aside > p {
   letter-spacing: 0.1em;
   font-size: 1rem;
   padding: 0.1em;
-  text-align: justify;
+  text-align: left;
 }
 
 .grid-wrapper {
@@ -202,7 +202,7 @@ main > p, aside > p {
 
 .card p {
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
     padding: 0.5em;
 }
 
@@ -265,10 +265,14 @@ h2{
   letter-spacing: 0.1em;
 }
 
-.colored {
-  font-size: 80px;
-  padding: 0.2em;
-  margin: 0.2em;
+.skill {
+  font-size: 70px;
+  padding: 5px;
+}
+
+.img-skill {
+  width: 70px;
+  padding: 5px;
 }
 
 footer {
@@ -330,7 +334,7 @@ footer p {
 	background:#dd4b39;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 560px) {
   nav a {
     display: block;
     font-size: 1em;
@@ -353,11 +357,11 @@ footer p {
   }
 }
 
-@media (min-width: 560px) {
+@media (min-width: 560px) and (max-width: 860px) {
 
   nav a {
     display: block;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.2em;
     flex-basis: 0;
     flex-grow: 1;
@@ -365,7 +369,7 @@ footer p {
 
   .nav-icon {
     /* display: block; */
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 0.2em;
     /* flex-basis: 0;
     flex-grow: 1; */
@@ -376,8 +380,20 @@ footer p {
   }
 }
 
+@media (min-width: 860px) {
+  nav a {
+    display: block;
+    font-size: 1.5em;
+    padding: 0.2em;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
 
-@media (min-width: 640px) {
+  .nav-icon {
+    font-size: 0.9em;
+    padding: 0.2em;
+  }
+
   .container {
     display: flex;
   }
