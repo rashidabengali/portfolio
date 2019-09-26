@@ -431,7 +431,7 @@ footer p {
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: tomato;
   border-radius: 3px;
 
   z-index: 1;
@@ -461,7 +461,7 @@ footer p {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: tomato;
 }
 
 /*
