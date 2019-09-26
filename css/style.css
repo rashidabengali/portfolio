@@ -472,9 +472,7 @@ footer p {
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
+
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
@@ -492,7 +490,7 @@ footer p {
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: none;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -515,6 +513,7 @@ footer p {
 #menuToggle input:checked ~ ul
 {
   transform: none;
+  background: #ededed;
 }
 
   #social {
