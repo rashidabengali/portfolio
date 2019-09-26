@@ -99,6 +99,7 @@ nav a:hover {
   color: tomato;
   text-decoration: none;
   transform: rotate(-15deg);
+  cursor: pointer;
 }
 
 header {
@@ -356,6 +357,10 @@ footer p {
 }
 
 @media only screen and (max-width: 560px) {
+
+  .container {
+    background: rgba(0,0,0,0.8);
+  }
 
   /* nav a {
     font-size: 1em;
