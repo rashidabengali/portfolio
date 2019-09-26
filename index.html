@@ -17,12 +17,43 @@
 
 <body>
 
-  <nav class="zone">
+  <nav class="zone" id="normal-menu">
     <a id="scroll-about" href="#about">About Me <i class="fa fa-id-card nav-icon"></i></a>
     <a id="scroll-work" href="#work">My Work <i class="fa fa-laptop-code nav-icon"></i></a>
     <a id="scroll-skills" href="#skills">My Skills <i class="fa fa-file-code nav-icon"></i></a>
     <a id="scroll-contact" href="#contact">Contact Me <i class="fa fa-sms nav-icon"></i></a>
   </nav>
+
+  <nav class="zone" id="hamburger-menu" role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a id="scroll-about" href="#about"><li>About Me <i class="fa fa-id-card nav-icon"></i></li></a>
+      <a id="scroll-work" href="#work"><li>My Work <i class="fa fa-laptop-code nav-icon"></i></li></a>
+      <a id="scroll-skills" href="#skills"><li>My Skills <i class="fa fa-file-code nav-icon"></i></li></a>
+      <a id="scroll-contact" href="#contact"><li>Contact Me <i class="fa fa-sms nav-icon"></i></li></a>
+    </ul>
+  </div>
+</nav>
 
   <!-- <nav class="zone sticky">
     <ul class="main-nav">
