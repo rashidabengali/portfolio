@@ -683,19 +683,19 @@ footer p {
  @media (min-width: 930px) and (max-width: 1071px) {
 
    .overlay a {
-     font-size: 1.5rem;
+     font-size: 1.3rem;
      padding: 0.2em;
      margin: 0.2em;
    }
 
    .card h4 {
-       font-size: 1.5rem;
+       font-size: 1.3rem;
    }
 
    .card p {
        font-size: 1rem;
        padding: 1em;
-       line-height: 30px;
+       line-height: 28px;
    }
 
   }
