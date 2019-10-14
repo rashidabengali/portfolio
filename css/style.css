@@ -631,7 +631,7 @@ footer p {
   }
 }
 
-@media (min-width: 600px) and (max-width: 700px) {
+@media (min-width: 600px) and (max-width: 704px) {
   .overlay a {
     font-size: 1.7rem;
     padding: 0.2em;
