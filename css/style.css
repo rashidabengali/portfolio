@@ -560,6 +560,10 @@ footer p {
   .coverText > h3 {
     font-size: 25px;
   }
+
+  main, aside {
+    background: rgba(0,0,0,0.8);
+  }
 }
 
 @media (min-width: 360px) and (max-width: 660px) {
