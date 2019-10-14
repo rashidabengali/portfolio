@@ -21,7 +21,7 @@
     <a id="scroll-about" href="#about">About Me <i class="fa fa-id-card nav-icon"></i></a>
     <a id="scroll-work" href="#work">My Work <i class="fa fa-laptop-code nav-icon"></i></a>
     <a id="scroll-skills" href="#skills">My Skills <i class="fa fa-file-code nav-icon"></i></a>
-    <a id="scroll-contact" href="#contact">Contact Me <i class="fa fa-sms nav-icon"></i></a>
+    <a id="scroll-contact" href="#contact">Contact Me <i class="fa fa-envelope nav-icon"></i></a>
   </nav>
 
   <nav class="zone" id="hamburger-menu" role="navigation">
@@ -32,25 +32,17 @@
     -->
     <input type="checkbox" />
 
-    <!--
-    Some spans to act as a hamburger.
-
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
+    <!-- Hamburger span-->
     <span></span>
     <span></span>
     <span></span>
 
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
+    <!-- mobile menu-->
     <ul id="menu">
       <a id="scroll-about" href="#about"><li>About Me <i class="fa fa-id-card nav-icon"></i></li></a>
       <a id="scroll-work" href="#work"><li>My Work <i class="fa fa-laptop-code nav-icon"></i></li></a>
       <a id="scroll-skills" href="#skills"><li>My Skills <i class="fa fa-file-code nav-icon"></i></li></a>
-      <a id="scroll-contact" href="#contact"><li>Contact Me <i class="fa fa-sms nav-icon"></i></li></a>
+      <a id="scroll-contact" href="#contact"><li>Contact Me <i class="fa fa-envelope nav-icon"></i></li></a>
     </ul>
   </div>
 </nav>
@@ -74,9 +66,9 @@
   <div id="about" class="container parallax-window zone" data-parallax="scroll" data-image-src="images/SEI_Rashida.jpg">
     <main>
       <h2 class="animated-heading zone">Passion</h2>
-      <p>I am passionate about building and designing creative and user-friendly web applications. My problem-solving skills, adaptability, reliability, and self-motivation towards work make me a unique individual.</p>
-      <p>Enjoy working in a team developing innovative software solutions while working on the latest technologies.</p>
-      <p>Have an eagerness to keep acquiring new skills and gain more knowledge.</p>
+      <p>I am passionate about building and designing creative and user-friendly web applications. My problem-solving skills, adaptability, reliability, and self-motivation towards work make me a unique individual</p>
+      <p>Enjoy working in a team developing innovative software solutions while working on the latest technologies</p>
+      <p>Have an eagerness to keep acquiring new skills and gain more knowledge</p>
       <p>Regular attendee in MeetUps staying connected with the Tech Community</p>
     </main>
 
@@ -93,87 +85,130 @@
     </aside>
 
   </div>
+  <div id="work" class="project zone">
+    <h2 id="project-work" class="animated-heading zone">Projects</h2>
+    <div class="zone blue grid-wrapper">
 
-  <div class="zone blue grid-wrapper" id="work">
+      <div class="card zone">
+        <img class="projectsimg" src="images/laptop4.png" alt="Speed Type">
+        <div class="overlay animated fadeInDown">
+          <a class="zone" href="https://rashidabengali.github.io/speed_type/#/" target="_blank">DEMO</a>
+          <a class="zone" href="https://github.com/rashidabengali/speed_type" target="_blank">CODE</a>
+          <!-- <div class="text"> -->
+            <br><br>
+            <h4>SPEED TYPE</h4>
+            <p>A game that will help improve your Typing Speed while making it immensely enjoyable for you to play. This game is built with <span>VueJS</span> as Front-end and <span>Firebase</span> as Back-end</p>
+          <!-- </div> -->
+        </div>
+      </div>
 
-    <div class="card zone">
-      <img class="projectsimg" src="images/laptopimg.png" alt="Tic Tac Toe">
-      <div class="overlay animated fadeInDown">
-        <a class="zone" href="https://rashidabengali.github.io/tic-tac-toe/" target="_blank">DEMO</a>
-        <a class="zone" href="https://github.com/rashidabengali/tic-tac-toe" target="_blank">CODE</a>
+      <div class="card zone">
+        <img class="projectsimg" src="images/laptop3.png" alt="Pamper My Pet">
+        <div class="overlay animated fadeInDown">
+          <a class="zone" href="https://rashidabengali.github.io/pamper_my_pet/#/" target="_blank">DEMO</a>
+          <a class="zone" href="https://github.com/pandyapurvi/pet_shop_react" target="_blank">CODE</a>
           <br><br>
-          <h4>TIC TAC TOE</h4>
-          <p>A simple yet fun game to be played between two players. This game is built using <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span> and <span>jQuery</span>
-          <br><br>Play the traditional Paper Pencil Game in an absolutely attractive new way!</p>
+          <h4>PAMPER MY PET</h4>
+          <p>An online shopping site for pet products. This E-Commerce web application uses mainly <span>ReactJS</span> Front-end and <span>Rails</span> Back-end with <span>PostgreSQL</span> as database and has been deployed on <span>Heroku</span></p>
+        </div>
+        <!-- <div class="text">
+        </div> -->
       </div>
-    </div>
 
-    <div class="card zone">
-      <img class="projectsimg" src="images/laptop2.png" alt="Restaurants on Rails">
-      <div class="overlay animated fadeInDown">
-        <a class="zone" href="https://project1-rashida.herokuapp.com/" target="_blank">DEMO</a>
-        <a class="zone" href="https://github.com/rashidabengali/Project1" target="_blank">CODE</a>
-        <br><br>
-        <h4>Restaurants on Rails</h4>
-        <p>It is the new age Restaurant Finder. This application is built using <span>Ruby on Rails</span>, <span>PostgreSQL</span> database connection and has been deployed on <span>Heroku</span>
-          <br>
-          Click the DEMO link to find out your favourite food place!</p>
-      </div>
-      <!-- <div class="text">
-      </div> -->
-    </div>
-
-    <div class="card zone">
-      <img class="projectsimg" src="images/laptop3.png" alt="Pamper My Pet">
-      <div class="overlay animated fadeInDown">
-        <a class="zone" href="https://rashidabengali.github.io/pamper_my_pet/#/" target="_blank">DEMO</a>
-        <a class="zone" href="https://github.com/pandyapurvi/pet_shop_react" target="_blank">CODE</a>
-        <br><br>
-        <h4>PAMPER MY PET</h4>
-        <p>An online shopping site for pet products. This E-Commerce web application uses mainly <span>ReactJS</span> Front-end and <span>Rails</span> Back-end with <span>PostgreSQL</span> as database and has been deployed on <span>Heroku</span></p>
-      </div>
-      <!-- <div class="text">
-      </div> -->
-    </div>
-
-    <div class="card zone">
-      <img class="projectsimg" src="images/laptop4.png" alt="Speed Type">
-      <div class="overlay animated fadeInDown">
-        <a class="zone" href="https://rashidabengali.github.io/speed_type/#/" target="_blank">DEMO</a>
-        <a class="zone" href="https://github.com/rashidabengali/speed_type" target="_blank">CODE</a>
-        <!-- <div class="text"> -->
+      <div class="card zone">
+        <img class="projectsimg" src="images/laptop2.png" alt="Restaurants on Rails">
+        <div class="overlay animated fadeInDown">
+          <a class="zone" href="https://project1-rashida.herokuapp.com/" target="_blank">DEMO</a>
+          <a class="zone" href="https://github.com/rashidabengali/Project1" target="_blank">CODE</a>
           <br><br>
-          <h4>SPEED TYPE</h4>
-          <p>A game that will help improve your Typing Speed while making it immensely enjoyable for you to play. This game is built with <span>VueJS</span> as Front-end and <span>Firebase</span> as Back-end</p>
-        <!-- </div> -->
+          <h4>Restaurants on Rails</h4>
+          <p>It is the new age Restaurant Finder. This application is built using <span>Ruby on Rails</span>, <span>PostgreSQL</span> database connection and has been deployed on <span>Heroku</span>
+            <br><br>Click the DEMO link to find out your favourite food place!</p>
+        </div>
+        <!-- <div class="text">
+        </div> -->
       </div>
-    </div>
 
+      <div class="card zone">
+        <img class="projectsimg" src="images/laptopimg.png" alt="Tic Tac Toe">
+        <div class="overlay animated fadeInDown">
+          <a class="zone" href="https://rashidabengali.github.io/tic-tac-toe/" target="_blank">DEMO</a>
+          <a class="zone" href="https://github.com/rashidabengali/tic-tac-toe" target="_blank">CODE</a>
+            <br><br>
+            <h4>TIC TAC TOE</h4>
+            <p>A simple yet fun game to be played between two players. This game is built using <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span> and <span>jQuery</span>
+            <br><br>Play the traditional Paper Pencil Game in an absolutely attractive new way!</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <div id="skills" class=" skilled zone">
-    <h2 id="scroll" class="animated-heading zone"> Skills</h2>
-    <i class="devicon-html5-plain-wordmark colored skill"></i>
-    <i class="devicon-css3-plain-wordmark colored skill"></i>
-    <i class="devicon-sass-original colored skill"></i>
-    <i class="devicon-javascript-plain colored skill"></i>
-    <i class="devicon-jquery-plain-wordmark colored skill"></i>
-    <i class="devicon-atom-original-wordmark colored skill"></i>
-    <i class="devicon-git-plain-wordmark colored skill"></i>
-    <i class="devicon-react-original-wordmark colored skill"></i>
-    <i class="devicon-vuejs-plain-wordmark colored skill"></i>
-    <i class="devicon-ruby-plain-wordmark colored skill"></i>
-    <i class="devicon-rails-plain-wordmark colored skill"></i>
-    <i class="devicon-postgresql-plain-wordmark colored skill"></i>
-    <i class="devicon-heroku-plain-wordmark colored skill"></i>
-    <i class="devicon-babel-plain colored skill"></i>
-    <i class="devicon-nodejs-plain-wordmark colored skill"></i>
-    <i class="devicon-mongodb-plain-wordmark colored skill"></i>
-    <i class="devicon-meteor-plain-wordmark colored skill"></i>
-    <img class="img-skill" src="images/icons8-graphql-100.png" alt="graphql">
-    <img class="img-skill" src="images/icons8-database-export-100.png" alt="sql">
-    <img class="img-skill" src="images/icons8-npm-100.png" alt="npm">
-    <img class="img-skill" src="images/icons8-ruby-gem-100.png" alt="gem">
+    <h2 id="scroll" class="animated-heading zone">Skills</h2>
+    <div class="skillful">
+      <i class="devicon-html5-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-css3-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-sass-original colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-javascript-plain colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-jquery-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-atom-original-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-git-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-react-original-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-vuejs-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-ruby-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-rails-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-postgresql-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-heroku-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-babel-plain colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-nodejs-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-mongodb-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <i class="devicon-meteor-plain-wordmark colored skill"></i>
+    </div>
+    <div class="skillful">
+      <img class="img-skill" src="images/icons8-graphql-100.png" alt="graphql">
+    </div>
+    <div class="skillful">
+      <img class="img-skill" src="images/icons8-database-export-100.png" alt="sql">
+    </div>
+    <div class="skillful">
+      <img class="img-skill" src="images/icons8-npm-100.png" alt="npm">
+    </div>
+    <div class="skillful">
+      <img class="img-skill" src="images/icons8-ruby-gem-100.png" alt="gem">
+    </div>
   </div>
 
   <footer class="zone" id="contact">
