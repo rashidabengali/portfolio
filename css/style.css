@@ -294,19 +294,19 @@ span {
   letter-spacing: 0.2em;
 }
 
-.skillful {
+.skillful, .img-skill {
   display: inline-block;
-  padding: 10px;
-  margin: 5px;
+  padding: 3px;
+  margin: 3px;
 }
 
 .img-skill {
-  display: inline-block;
   width: 60px;
 }
 
 .skill {
   font-size: 60px;
+  padding: 3px;
 }
 
 footer {
